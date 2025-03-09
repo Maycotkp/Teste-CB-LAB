@@ -2,6 +2,7 @@
 Avaliação técnica do CB LAB
 
 # 1º Desafio
+
 Usarei o método de Escrita de Planejamento de Teste BDD.
 
 *Primeiro fluxo*
