@@ -2,10 +2,10 @@
 Avaliação técnica do CB LAB
 
 # 1º Desafio
-
 Usarei o método de Escrita de Planejamento de Teste BDD.
 
-*Primeiro fluxo*
+**Primeiro fluxo**
+
 Um cliente acessa um restaurante do Coco Bambu.
 O 1° fluxo e critico pois e nas maioria das veses e o que o usuario faz ao entra no site, muitos so vão fazer login ou se cadastra depois de colocar o pedido no carrinho e os usuarios que ja tem conta e esta logado fazer essa busca da região onde o usuario esta.
 sendo uns do fluxo mais inportante pois sem ele o usuario não poderia usufruir do restante do saite da empresa.
@@ -23,7 +23,8 @@ Story: Cliente acessa um restaurante do Coco Bambu
 * E clicar no botão com a localização "Águas Claras",
 * Então visualizará uma nova página "https://app-hom.cocobambu.com/delivery" com o cardápio.
 
-*Segundo fluxo*
+**Segundo fluxo**
+
 Um cliente quer adicionar itens à sacola.
 E um fluxo onde o usario adiciona o que ele quer na sesta de compra nisso sendo critico pois e meio de o usario compra os itens que ele soliciotou.
 E um passo para a maneira que a empresa ganhe o dinheiro, vendedo o produto.
@@ -43,7 +44,8 @@ Story: Cliente acessa o cardápio do Coco Bambu
 * E clicar no botão "Adicionar",
 * Então visualizará uma nova página "https://app-hom.cocobambu.com/delivery" com o resumo do pedido feito.
 
-*Terceiro fluxo*
+**Terceiro fluxo**
+
 Um cliente quer excluir itens da sacola.
 Como o anterio esse fluxo para o usuario e importante, pois um usuario pode erra de varis forma pedir adicionar na sacola mais de 10 pedidos e ele vai ter um meio de remover esse itens ou em caso de desistir de um item.
 assim facilitando a navegação no site, caso não tenha essa função muito ususarios distiria do saite pois não tem como remover um item.
