@@ -7,16 +7,13 @@ Usarei o método de Escrita de Planejamento de Teste BDD.
 **Primeiro fluxo**
 
 Um cliente acessa um restaurante do Coco Bambu.
-O 1° fluxo e critico pois e nas maioria das veses e o que o usuario faz ao entra no site, muitos so vão fazer login ou se cadastra depois de colocar o pedido no carrinho e os usuarios que ja tem conta e esta logado fazer essa busca da região onde o usuario esta.
-sendo uns do fluxo mais inportante pois sem ele o usuario não poderia usufruir do restante do saite da empresa.
+O primeiro fluxo é crítico, pois é, na maioria das vezes, o que o usuário faz ao entrar no site. Muitos só irão fazer login ou se cadastrar depois de colocar o pedido no carrinho, e os usuários que já têm conta e estão logados fazem a busca da região onde estão. Esse fluxo é um dos mais importantes, pois, sem ele, o usuário não poderia usufruir do restante do site da empresa.
 
 Requisitos para execução do teste:
-
 * Acesso a um navegador Chrome ou Edge
 * Ter o link para o site "https://app-hom.cocobambu.com/"
 
 Story: Cliente acessa um restaurante do Coco Bambu
-
 * Dado que um cliente quer acessar um restaurante,
 * Quando ele pesquisar no campo "Informe seu endereço",
 * E colocar "Águas Claras",
@@ -26,40 +23,34 @@ Story: Cliente acessa um restaurante do Coco Bambu
 **Segundo fluxo**
 
 Um cliente quer adicionar itens à sacola.
-E um fluxo onde o usario adiciona o que ele quer na sesta de compra nisso sendo critico pois e meio de o usario compra os itens que ele soliciotou.
-E um passo para a maneira que a empresa ganhe o dinheiro, vendedo o produto.
+Esse fluxo é onde o usuário adiciona o que ele deseja à cesta de compras. Ele é crítico, pois é o meio pelo qual o usuário compra os itens que solicitou, sendo um passo importante para a empresa gerar vendas.
 
 Requisitos para execução do teste:
-
 * Acesso a um navegador Chrome ou Edge
 * Ter o link para o site "https://app-hom.cocobambu.com/"
 * Estar logado no site
 * Ter cadastrado um endereço
 
-Story: Cliente adiciona um item a sacola
-
+Story: Cliente adiciona um item à sacola
 * Dado que um cliente quer adicionar dois "Camarões à delícia",
 * Quando clicar no "Camarões à delícia",
-* E clicar no botão "+"
+* E clicar no botão "+",
 * E clicar no botão "Adicionar",
 * Então visualizará uma nova página "https://app-hom.cocobambu.com/delivery" com o resumo do pedido feito.
 
 **Terceiro fluxo**
 
 Um cliente quer excluir itens da sacola.
-Como o anterio esse fluxo para o usuario e importante, pois um usuario pode erra de varis forma pedir adicionar na sacola mais de 10 pedidos e ele vai ter um meio de remover esse itens ou em caso de desistir de um item.
-assim facilitando a navegação no site, caso não tenha essa função muito ususarios distiria do saite pois não tem como remover um item.
+Assim como o fluxo anterior, esse também é importante, pois o usuário pode cometer erros, como adicionar mais de 10 pedidos à sacola, e precisará de uma maneira de remover esses itens, ou se desistir de algum item. Isso facilita a navegação no site, pois, sem essa função, muitos usuários desistiriam do site por não conseguirem remover um item da sacola.
 
 Requisitos para execução do teste:
-
 * Acesso a um navegador Chrome ou Edge
 * Ter o link para o site "https://app-hom.cocobambu.com/"
 * Estar logado no site
 * Ter cadastrado um endereço
 * Ter escolhido "Camarões à delícia"
 
-Story: Cliente acessa o cardápio do Coco Bambu
-
+Story: Cliente remove um item da sacola
 * Dado que um cliente quer remover o "Camarões à delícia",
 * Quando clicar no campo "sacola" na parte inferior do site,
 * E clicar nos três pontinhos ao lado do "Camarões à delícia",
@@ -67,39 +58,33 @@ Story: Cliente acessa o cardápio do Coco Bambu
 * E clicar no botão "Sim",
 * Então visualizará uma nova página "https://app-hom.cocobambu.com/delivery" com o cardápio sem a sacola.
 
+## Desafio 3
 
-## Dasafio 3
+Adicionar um novo item ao site via API Add a new cart
 
-Adicionar um novo item ao saite via API Add a new cart
+Requisitos para execução do teste:
+* Acesso à API
+* Ter um payload válido
 
-Requisito para execução do teste:
-
-* Acessso a API
-* Ter um payload 
-
-Story: Adiconar um novo item no carinho via API
-
-* Dado que tenha um payload válido para a inclução de um novo item
-* Quando eu fasso um requisição POST para "https://dummyjson.com/carts/add"
+Story: Adicionar um novo item no carrinho via API
+* Dado que tenha um payload válido para a inclusão de um novo item,
+* Quando eu fizer uma requisição POST para "https://dummyjson.com/carts/add",
 * Então o status da resposta deve ser 201
 * E o corpo da resposta deve conter ID do novo produto
-* E o campo "id" e a "quantity" deve ser igual ao enviado pelo payload
+* E o campo "id" e a "quantity" devem ser iguais aos enviados pelo payload
 
 Story: Atualizar um item no carrinho via API
-
-* Dado que ja exista um item com ID "144"
-* E que tenha um payload válido para a atulizar
-* Quando eu fasso um requisição PUT para "https://dummyjson.com/carts/1"
+* Dado que já exista um item com ID "144"
+* E que tenha um payload válido para atualizar
+* Quando eu fizer uma requisição PUT para "https://dummyjson.com/carts/1"
 * Então o status da resposta deve ser 200
-* E o corpo da resposta deve conter ID do produto 
-* E o campo "id" e a "quantity" deve refletir as novas infomações do item
-  
-Story: Deletar um item no carrinho via API
+* E o corpo da resposta deve conter ID do produto
+* E o campo "id" e a "quantity" devem refletir as novas informações do item
 
-* Dado que ja exista um item com ID "144"
-* E que tenha um payload válido para a deletar
-* Quando eu fasso um requisição DELETE para "https://dummyjson.com/carts/1"
+Story: Deletar um item no carrinho via API
+* Dado que já exista um item com ID "144"
+* E que tenha um payload válido para deletar
+* Quando eu fizer uma requisição DELETE para "https://dummyjson.com/carts/1"
 * Então o status da resposta deve ser 204
-* E o corpo da resposta deve conter ID do produto 
+* E o corpo da resposta deve conter ID do produto
 * E o campo "isDeleted" deve conter "true"
-  
