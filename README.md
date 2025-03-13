@@ -36,7 +36,7 @@ Requisitos para execução do teste:
 * Estar logado no site
 * Ter cadastrado um endereço
 
-Story: Cliente acessa o cardápio do Coco Bambu
+Story: Cliente adiciona um item a sacola
 
 * Dado que um cliente quer adicionar dois "Camarões à delícia",
 * Quando clicar no "Camarões à delícia",
@@ -68,5 +68,38 @@ Story: Cliente acessa o cardápio do Coco Bambu
 * Então visualizará uma nova página "https://app-hom.cocobambu.com/delivery" com o cardápio sem a sacola.
 
 
+## Dasafio 3
 
+Adicionar um novo item ao saite via API Add a new cart
 
+Requisito para execução do teste:
+
+* Acessso a API
+* Ter um payload 
+
+Story: Adiconar um novo item no carinho via API
+
+* Dado que tenha um payload válido para a inclução de um novo item
+* Quando eu fasso um requisição POST para "https://dummyjson.com/carts/add"
+* Então o status da resposta deve ser 201
+* E o corpo da resposta deve conter ID do novo produto
+* E o campo "id" e a "quantity" deve ser igual ao enviado pelo payload
+
+Story: Atualizar um item no carrinho via API
+
+* Dado que ja exista um item com ID "144"
+* E que tenha um payload válido para a atulizar
+* Quando eu fasso um requisição PUT para "https://dummyjson.com/carts/1"
+* Então o status da resposta deve ser 200
+* E o corpo da resposta deve conter ID do produto 
+* E o campo "id" e a "quantity" deve refletir as novas infomações do item
+  
+Story: Deletar um item no carrinho via API
+
+* Dado que ja exista um item com ID "144"
+* E que tenha um payload válido para a deletar
+* Quando eu fasso um requisição DELETE para "https://dummyjson.com/carts/1"
+* Então o status da resposta deve ser 204
+* E o corpo da resposta deve conter ID do produto 
+* E o campo "isDeleted" deve conter "true"
+  
