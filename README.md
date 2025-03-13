@@ -36,7 +36,7 @@ Requisitos para execução do teste:
 * Estar logado no site
 * Ter cadastrado um endereço
 
-Story: Cliente acessa o cardápio do Coco Bambu
+Story: Cliente adiciona um item a sacola
 
 * Dado que um cliente quer adicionar dois "Camarões à delícia",
 * Quando clicar no "Camarões à delícia",
