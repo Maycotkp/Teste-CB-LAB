@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-03-12T22:42:06.179547" rpa="false" schemaversion="5">
+<suite id="s1" name="Teste-CB-LAB" source="C:\Users\jessi\Downloads\mayco\Teste-CB-LAB">
+<suite id="s1-s1" name="Teste atumatisado" source="C:\Users\jessi\Downloads\mayco\Teste-CB-LAB\Teste_atumatisado">
+<suite id="s1-s1-s1" name="Teste" source="C:\Users\jessi\Downloads\mayco\Teste-CB-LAB\Teste_atumatisado\teste">
+<suite id="s1-s1-s1-s1" name="Acessar Restaurante" source="C:\Users\jessi\Downloads\mayco\Teste-CB-LAB\Teste_atumatisado\teste\acessar_restaurante.robot">
+<test id="s1-s1-s1-s1-t1" name="Acessar restaurante" line="8">
+<kw name="Abrir navegador" owner="acessar_restaurante_keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-12T22:42:06.918197" level="INFO">Opening browser 'chrome' to base url 'https://app-hom.cocobambu.com/delivery'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-12T22:42:06.917214" elapsed="9.680866"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-03-12T22:42:16.599449" elapsed="0.050023"/>
+</kw>
+<status status="PASS" start="2025-03-12T22:42:06.914874" elapsed="9.735099"/>
+</kw>
+<kw name="Abri item" owner="acessar_restaurante_keywords">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-12T22:42:46.654671" level="INFO">Slept 30 seconds.</msg>
+<arg>30s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-12T22:42:16.652593" elapsed="30.002931"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-12T22:42:46.658425" level="INFO">Clicking element '//*[@id="content"]/delivery-menu/ion-content/section/item-section[1]/item-card[1]'.</msg>
+<arg>//*[@id="content"]/delivery-menu/ion-content/section/item-section[1]/item-card[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-12T22:42:46.656152" elapsed="0.268915"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-12T22:42:56.927936" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-12T22:42:46.925763" elapsed="10.004257"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-03-12T22:42:57.363478" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="tela_item.png"&gt;&lt;img src="tela_item.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>..//results//tela_item.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-03-12T22:42:56.931080" elapsed="0.434180"/>
+</kw>
+<status status="PASS" start="2025-03-12T22:42:16.650865" elapsed="40.715541"/>
+</kw>
+<kw name="Fazer login" owner="acessar_restaurante_keywords">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-03-12T22:42:57.370083" level="INFO">Clicking button '//*[@id="content"]/item-details/form/div[2]/button'.</msg>
+<arg>//*[@id="content"]/item-details/form/div[2]/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-12T22:42:57.368954" elapsed="0.254122"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-12T22:43:07.626510" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-12T22:42:57.624346" elapsed="10.003652"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-12T22:43:07.632451" level="INFO">Typing text 'fotinow344@oziere.com' into text field '//*[@placeholder="E-mail"]'.</msg>
+<msg time="2025-03-12T22:43:07.857046" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-03-12T22:43:07.858126" level="FAIL">InvalidElementStateException: Message: invalid element state
+  (Session info: chrome=134.0.6998.89)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7B926FE45+26629]
+	(No symbol) [0x00007FF7B91D6010]
+	(No symbol) [0x00007FF7B906914C]
+	(No symbol) [0x00007FF7B90B4D35]
+	(No symbol) [0x00007FF7B90E7AAA]
+	(No symbol) [0x00007FF7B90B2156]
+	(No symbol) [0x00007FF7B90E7CC0]
+	(No symbol) [0x00007FF7B9110169]
+	(No symbol) [0x00007FF7B90E7883]
+	(No symbol) [0x00007FF7B90B0550]
+	(No symbol) [0x00007FF7B90B1803]
+	GetHandleVerifier [0x00007FF7B95C72BD+3529853]
+	GetHandleVerifier [0x00007FF7B95DDA22+3621858]
+	GetHandleVerifier [0x00007FF7B95D24D3+3575443]
+	GetHandleVerifier [0x00007FF7B933B77A+860474]
+	(No symbol) [0x00007FF7B91E088F]
+	(No symbol) [0x00007FF7B91DCBC4]
+	(No symbol) [0x00007FF7B91DCD66]
+	(No symbol) [0x00007FF7B91CC2C9]
+	BaseThreadInitThunk [0x00007FFA14A7259D+29]
+	RtlUserThreadStart [0x00007FFA1566AF38+40]
+</msg>
+<arg>locator=//*[@placeholder="E-mail"]</arg>
+<arg>text=${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2025-03-12T22:43:07.629082" elapsed="0.247440">InvalidElementStateException: Message: invalid element state
+  (Session info: chrome=134.0.6998.89)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7B926FE45+26629]
+	(No symbol) [0x00007FF7B91D6010]
+	(No symbol) [0x00007FF7B906914C]
+	(No symbol) [0x00007FF7B90B4D35]
+	(No symbol) [0x00007FF7B90E7AAA]
+	(No symbol) [0x00007FF7B90B2156]
+	(No symbol) [0x00007FF7B90E7CC0]
+	(No symbol) [0x00007FF7B9110169]
+	(No symbol) [0x00007FF7B90E7883]
+	(No symbol) [0x00007FF7B90B0550]
+	(No symbol) [0x00007FF7B90B1803]
+	GetHandleVerifier [0x00007FF7B95C72BD+3529853]
+	GetHandleVerifier [0x00007FF7B95DDA22+3621858]
+	GetHandleVerifier [0x00007FF7B95D24D3+3575443]
+	GetHandleVerifier [0x00007FF7B933B77A+860474]
+	(No symbol) [0x00007FF7B91E088F]
+	(No symbol) [0x00007FF7B91DCBC4]
+	(No symbol) [0x00007FF7B91DCD66]
+	(No symbol) [0x00007FF7B91CC2C9]
+	BaseThreadInitThunk [0x00007FFA14A7259D+29]
+	RtlUserThreadStart [0x00007FFA1566AF38+40]
+</status>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<arg>//*[@id="formUserPass"]/div[3]/ion-input/label/div[2]</arg>
+<arg>${senha}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-03-12T22:43:07.877291" elapsed="0.000581"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>//*[@id="content"]/app-login/div/div/div[2]/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-03-12T22:43:07.878464" elapsed="0.000556"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-03-12T22:43:07.879774" elapsed="0.000415"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>/html/body/app-root/ion-app/div/div/desktop-modal/div/email-spam-popup/div/div/base-button/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-03-12T22:43:07.880567" elapsed="0.000805"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>//*[@id="otp_0_i4ytettdsfm86nymt2"]</arg>
+<arg>A</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-03-12T22:43:07.881886" elapsed="0.000515"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>//*[@id="otp_1_i4ytettdsfm86nymt2"]</arg>
+<arg>A</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-03-12T22:43:07.882905" elapsed="0.000417"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>//*[@id="otp_2_i4ytettdsfm86nymt2"]</arg>
+<arg>A</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-03-12T22:43:07.883701" elapsed="0.000432"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>//*[@id="otp_3_i4ytettdsfm86nymt2"]</arg>
+<arg>A</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-03-12T22:43:07.885081" elapsed="0.000595"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>//*[@id="otp_4_i4ytettdsfm86nymt2"]</arg>
+<arg>A</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-03-12T22:43:07.886124" elapsed="0.000494"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>//*[@id="otp_5_i4ytettdsfm86nymt2"]</arg>
+<arg>A</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-03-12T22:43:07.887182" elapsed="0.000428"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>//*[@id="content"]/app-login/div/div/div[3]/button[1]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-03-12T22:43:07.887998" elapsed="0.000411"/>
+</kw>
+<status status="FAIL" start="2025-03-12T22:42:57.367657" elapsed="10.521301">InvalidElementStateException: Message: invalid element state
+  (Session info: chrome=134.0.6998.89)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7B926FE45+26629]
+	(No symbol) [0x00007FF7B91D6010]
+	(No symbol) [0x00007FF7B906914C]
+	(No symbol) [0x00007FF7B90B4D35]
+	(No symbol) [0x00007FF7B90E7AAA]
+	(No symbol) [0x00007FF7B90B2156]
+	(No symbol) [0x00007FF7B90E7CC0]
+	(No symbol) [0x00007FF7B9110169]
+	(No symbol) [0x00007FF7B90E7883]
+	(No symbol) [0x00007FF7B90B0550]
+	(No symbol) [0x00007FF7B90B1803]
+	GetHandleVerifier [0x00007FF7B95C72BD+3529853]
+	GetHandleVerifier [0x00007FF7B95DDA22+3621858]
+	GetHandleVerifier [0x00007FF7B95D24D3+3575443]
+	GetHandleVerifier [0x00007FF7B933B77A+860474]
+	(No symbol) [0x00007FF7B91E088F]
+	(No symbol) [0x00007FF7B91DCBC4]
+	(No symbol) [0x00007FF7B91DCD66]
+	(No symbol) [0x00007FF7B91CC2C9]
+	BaseThreadInitThunk [0x00007FFA14A7259D+29]
+	RtlUserThreadStart [0x00007FFA1566AF38+40]
+</status>
+</kw>
+<kw name="Adicionar item" owner="acessar_restaurante_keywords">
+<status status="NOT RUN" start="2025-03-12T22:43:07.890186" elapsed="0.000621"/>
+</kw>
+<status status="FAIL" start="2025-03-12T22:42:06.907895" elapsed="60.984079">InvalidElementStateException: Message: invalid element state
+  (Session info: chrome=134.0.6998.89)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7B926FE45+26629]
+	(No symbol) [0x00007FF7B91D6010]
+	(No symbol) [0x00007FF7B906914C]
+	(No symbol) [0x00007FF7B90B4D35]
+	(No symbol) [0x00007FF7B90E7AAA]
+	(No symbol) [0x00007FF7B90B2156]
+	(No symbol) [0x00007FF7B90E7CC0]
+	(No symbol) [0x00007FF7B9110169]
+	(No symbol) [0x00007FF7B90E7883]
+	(No symbol) [0x00007FF7B90B0550]
+	(No symbol) [0x00007FF7B90B1803]
+	GetHandleVerifier [0x00007FF7B95C72BD+3529853]
+	GetHandleVerifier [0x00007FF7B95DDA22+3621858]
+	GetHandleVerifier [0x00007FF7B95D24D3+3575443]
+	GetHandleVerifier [0x00007FF7B933B77A+860474]
+	(No symbol) [0x00007FF7B91E088F]
+	(No symbol) [0x00007FF7B91DCBC4]
+	(No symbol) [0x00007FF7B91DCD66]
+	(No symbol) [0x00007FF7B91CC2C9]
+	BaseThreadInitThunk [0x00007FFA14A7259D+29]
+	RtlUserThreadStart [0x00007FFA1566AF38+40]
+</status>
+</test>
+<status status="FAIL" start="2025-03-12T22:42:06.238192" elapsed="61.667224"/>
+</suite>
+<status status="FAIL" start="2025-03-12T22:42:06.234913" elapsed="61.675862"/>
+</suite>
+<status status="FAIL" start="2025-03-12T22:42:06.231212" elapsed="61.684979"/>
+</suite>
+<status status="FAIL" start="2025-03-12T22:42:06.201254" elapsed="61.719604"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Teste-CB-LAB" id="s1" pass="0" fail="1" skip="0">Teste-CB-LAB</stat>
+<stat name="Teste atumatisado" id="s1-s1" pass="0" fail="1" skip="0">Teste-CB-LAB.Teste atumatisado</stat>
+<stat name="Teste" id="s1-s1-s1" pass="0" fail="1" skip="0">Teste-CB-LAB.Teste atumatisado.Teste</stat>
+<stat name="Acessar Restaurante" id="s1-s1-s1-s1" pass="0" fail="1" skip="0">Teste-CB-LAB.Teste atumatisado.Teste.Acessar Restaurante</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
